@@ -28,7 +28,7 @@ namespace Lock
         {
             if (code == SECRET_CODE)
             {
-                lock (this){
+                lock (key){ // you can also lock(this)
                     try
                     {
                         Monitor.Enter(key);
